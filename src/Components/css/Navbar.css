@@ -1,0 +1,18 @@
+.navbar{
+    height: 10vh;
+    width:auto;
+    background-color: rgb(110, 206, 206);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.navbar img{
+
+    width: 50x;
+    height: 50px;
+    margin-left: 4vw;
+    margin-right: 10px;
+}
