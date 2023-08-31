@@ -5,9 +5,9 @@ const Album = ({album})=>{
         <>
         <div className="album">
             <div className="album-img">
-                <img src={album.src} alt="album_img" />
+                <img src="https://cdn-icons-png.flaticon.com/128/3342/3342137.png" alt="album_img" />
             </div>
-            <span>{album.albumName}</span>
+            <span>{album.name}</span>
 
         </div>
         

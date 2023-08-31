@@ -1,13 +1,15 @@
 
+
 .img-comp{
-    margin:15px;
-    height: 18vh;
-    border:5px solid #eee;
-    flex-direction: column;
-    align-items: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius:10px ;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
+    box-sizing: border-box;
     cursor: pointer;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    width: 100%;
 }
 
 
@@ -15,9 +17,9 @@
     height:85%;
 }
 .span{
-    background-color: #eee;
+    /* background-color: #eee; */
     font-size: 1.1rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     justify-self: baseline;
     align-self:center ;
     text-align: center;
@@ -26,8 +28,9 @@
 }
 
 .image img{
- width:100%;
+ width:95%;
  height: 80%;
- border-top-left-radius: 8px;
- border-top-right-radius:8px ;
+ margin:10px;
+ /* border-top-left-radius: 8px;
+ border-top-right-radius:8px ; */
 }

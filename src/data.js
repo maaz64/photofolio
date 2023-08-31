@@ -55,7 +55,7 @@ export const ImgArr = [
     {
         id:1,
         src : "https://images7.alphacoders.com/131/1310984.jpeg",
-        albumName : "Spider Man"
+        albumName : "Image 1"
     },
     {
         id:2,
@@ -70,12 +70,12 @@ export const ImgArr = [
     {
         id:4,
         src : "https://images8.alphacoders.com/131/1319120.png",
-        albumName : "Album 4"
+        albumName : "Image 4"
     },
     {
         id:5,
         src : "https://images7.alphacoders.com/131/1310984.jpeg",
-        albumName : "Album 5"
+        albumName : "Image 5"
     },
     {
         id:6,
