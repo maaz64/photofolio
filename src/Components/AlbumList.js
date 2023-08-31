@@ -3,7 +3,7 @@ import { AlbumImgArr } from "../data";
 import Album from "./Album";
 import "./css/AlbumList.css"
 
-const AlbumList = () => {
+const AlbumList = ({toggleIsImgList}) => {
     const [isCreateAlbum,setIsCreateAlbum] = useState(false)
 
     const toggleIsCreate = ()=>{
@@ -23,7 +23,7 @@ const AlbumList = () => {
             </form>
         </div>:null}
         <div className="album-list-top">
-            <div className="text">
+            <div className="album-text">
                 <h1>Your Albums</h1>
             </div>
             <div className={isCreateAlbum?"cancel-album-btn":"add-album-btn"}>
@@ -32,9 +32,11 @@ const AlbumList = () => {
 
 
         </div>
-        <div className="album-list-container">
+        <div className="album-list-container" >
           {AlbumImgArr.map((album) => (
+            <div onClick={toggleIsImgList}>
             <Album album={album} key={album.id} />
+            </div>
           ))}
         </div>
       </div>

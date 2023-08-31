@@ -8,7 +8,15 @@
     align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius:10px ;
+    cursor: pointer;
+    min-width: 150px;
 }
+
+.album:hover{    
+    border:5px solid #07f;
+}
+
+
 
 .album-img{
     display: flex;
@@ -23,9 +31,15 @@
     justify-self: baseline;
     padding-block: 5px;
     text-align: center;
-    transition: .3s;
+    
     width: 100%;
 }
+
+.album:hover span{
+    background-color: #07f;
+    transform: 0.3s;
+    color: white;
+} 
 
 .album-img img{
  width: 50px;
