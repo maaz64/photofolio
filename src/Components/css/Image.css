@@ -1,5 +1,3 @@
-
-
 .img-comp{
     background-color: #fff;
     border-radius: 5px;
@@ -15,11 +13,10 @@
 
 .image{
     height:85%;
+    background-size: contain;
 }
-.span{
-    /* background-color: #eee; */
+.img-comp span{
     font-size: 1.1rem;
-    /* font-weight: 700; */
     justify-self: baseline;
     align-self:center ;
     text-align: center;
@@ -28,9 +25,47 @@
 }
 
 .image img{
- width:95%;
- height: 80%;
- margin:10px;
- /* border-top-left-radius: 8px;
- border-top-right-radius:8px ; */
+ width:100%;
+ height: 95%; 
 }
+
+.img-comp:hover .update-img {
+    display: block;
+}
+
+.img-comp:hover .delete-img{
+    display: block;
+}
+
+.update-img, .delete-img{
+    border: none;
+    display: none;
+    outline: none;
+    position: absolute;
+    top: -1px;
+    transition: .3s;
+}
+.update-img{
+    right: 50px;
+    top:1px;
+}
+
+.delete-img{
+    right:10px;
+    background: none;
+}
+
+
+.update-img img, .delete-img img{
+    width:30px;
+}
+
+.update-img img:hover, .delete-img img:hover{
+    width:35px;
+    transition: .3s;
+
+}
+
+
+
+

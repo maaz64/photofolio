@@ -11,17 +11,10 @@ import { collection, addDoc, onSnapshot } from "firebase/firestore";
 function App() {
 const[isImgList, setIsImgList] = useState(false);
 const[albums, setAlbums] = useState([]);
+const[selectedAlbum,setSelectedAlbum] = useState(null);
 
-const addAlbum =async (name)=>{
-  setAlbums([{
-    name,
-    images:albums.images
-  },...albums]);
-  await addDoc(collection(db, "photofolio"), {
-    name,
-    images:[]
-  });
-}
+
+
 
 useEffect(() => {
   async function getAlbums() {
@@ -43,9 +36,21 @@ useEffect(() => {
   getAlbums();
 }, []);
 
-const toggleIsImgList = ()=>
+const addAlbum =async (name)=>{
+  setAlbums([{
+    name,
+    images:albums.images
+  },...albums]);
+  await addDoc(collection(db, "photofolio"), {
+    name,
+    images:[]
+  });
+}
+
+const toggleIsImgList = (album)=>
 {
   setIsImgList(!isImgList);
+  setSelectedAlbum(album);
 }
 
   return (
@@ -53,7 +58,7 @@ const toggleIsImgList = ()=>
       <Navbar/>
 
       {isImgList?
-      <ImageList toggleIsImgList={toggleIsImgList}/>:
+      <ImageList toggleIsImgList={toggleIsImgList}selectedAlbum={selectedAlbum}/>:
       <AlbumList toggleIsImgList={toggleIsImgList} addAlbum={addAlbum} albums={albums}/>
       }
 

@@ -14,8 +14,11 @@ const AlbumList = ({toggleIsImgList, addAlbum, albums}) => {
       e.preventDefault();
       const albumName = albumNameRef.current.value;
       addAlbum(albumName);
+      clearInput();
+    }
+    
+    const clearInput = ()=>{
       albumNameRef.current.value = "";
-  
     }
 
   return (
@@ -26,8 +29,8 @@ const AlbumList = ({toggleIsImgList, addAlbum, albums}) => {
             <span>Create an Album</span>
             <form onSubmit={handleAlbumForm}>
                 <input type="text" ref={albumNameRef}placeholder="Album Name" required/>
-                {/* <button onClick={()=>{albumNameRef.current.value=""}}>Clear</button> */}
                 <button >Create</button>
+                <button onClick={clearInput}>Clear</button>
             </form>
         </div>:null}
         <div className="album-list-top">
@@ -37,16 +40,16 @@ const AlbumList = ({toggleIsImgList, addAlbum, albums}) => {
             <div className={isCreateAlbum?"cancel-album-btn":"add-album-btn"}>
                 <button onClick={toggleIsCreate}>{isCreateAlbum?"Cancel":"Add Album"}</button>
             </div>
-
-
         </div>
+
         <div className="album-list-container" >
           {albums.map((album) => (
-            <div onClick={toggleIsImgList}>
+            <div key={album.id} onClick={()=>toggleIsImgList(album)}>
             <Album album={album} key={album.id} />
             </div>
           ))}
         </div>
+
       </div>
     </>
   );
