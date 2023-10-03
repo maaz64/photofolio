@@ -18,7 +18,7 @@
 
 
 
-.album-img{
+.albumImg{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,8 @@
     color: white;
 } 
 
-.album-img img{
+.albumImg img{
  width: 50px;
  height: 50px;
 }
+

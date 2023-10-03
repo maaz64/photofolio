@@ -1,11 +1,11 @@
-.album-list{
+.albumList{
 
     width: 65vw;
     position: absolute;
     left: 17%;
 }
 
-.create-album{
+.createAlbum{
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
@@ -18,19 +18,19 @@
 
 }
 
-.create-album span{
+.createAlbum span{
     font-size: 1.7rem;
     font-weight: 700;
 }
 
-.create-album form{
+.createAlbum form{
     align-items: center;
     display: flex;
     gap: 10px;
     justify-content: space-evenly;
 }
 
-.create-album form input{
+.createAlbum form input{
     border: 3px solid transparent;
     border-radius: 30px;
     font-size: 1.2rem;
@@ -41,7 +41,7 @@
     width: 60%;
 }
 
-.create-album form button{
+.createAlbum form button{
     background-color: #07f;
     border: none;
     border-radius: 7px;
@@ -55,11 +55,11 @@
     width: 100px;
 }
 
-.create-album form button:first-of-type {
+.createAlbum form button:first-of-type {
     background-color: #ff1300;
 }
 
-.album-list-top{
+.albumListTop{
     /* border: 4px solid rgb(170, 22, 22); */
     display: flex;
     justify-content: space-between;
@@ -69,7 +69,7 @@
 
 
 }
-.add-album-btn button{
+.addAlbumBtn button{
     background-color: rgba(0,119,255,.1);
     border: 2px solid #07f;
     border-radius: 5px;
@@ -79,7 +79,7 @@
     outline: none;
     padding: 5px 10px;
 }
-.cancel-album-btn button{
+.cancelAlbumBtn button{
     background-color:rgba(246, 198, 195, 0.1);
     border: 2px solid #ff1300;
     border-radius: 5px;
@@ -90,11 +90,14 @@
     padding: 5px 10px;
 }
 
-.album-list-container{
+.albumListContainer{
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
 }
+
+
+
 
 
 

@@ -1,0 +1,91 @@
+
+.carousel {
+  position: relative;
+  border-radius: 10px;
+  height: 50vh;
+  max-width: 650px;
+  margin: auto;
+}
+.carousel>img {
+  width: 99%;
+  height: 99%;
+  border-radius: 8px;
+  border: black solid 2px;
+}
+.slide_direction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel:hover .left{
+  display: block;
+}
+.carousel:hover .right{
+  display: block;
+}
+
+.left,
+.right{
+  background-color: #fcfcfc;
+  color: #fff;
+  padding: 10px 8px 8px 13px;
+  margin: 0 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  margin: auto 10px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+.indicator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.dot {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.active {
+  background-color: #fa2020;
+}
+
+.cancel {
+  aspect-ratio: 1;
+  padding: 10px 8px 8px 13px;
+  margin: 0 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 11.6%;
+  margin: auto 10px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  right:-2.1%;
+  display: none;
+}
+
+.cancel img{
+  width: 25px;
+  height: 25px;
+  border-top-right-radius:8px ;
+}
+.carousel:hover .cancel{
+  display: block;
+}
+
+

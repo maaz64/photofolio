@@ -1,10 +1,10 @@
-.img-list{
+.imgList{
     width: 65vw;
     position: absolute;
     left: 17%;
 }
 
-.create-img{
+.createImg{
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
@@ -16,18 +16,18 @@
     width: 50vw;
 }
 
-.create-img span{
+.createImg span{
     font-size: 1.7rem;
     font-weight: 700;
 }
 
-.create-img form{
+.createImg form{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.create-img form input{
+.createImg form input{
     border: 3px solid transparent;
     border-radius: 30px;
     font-size: 1.2rem;
@@ -37,17 +37,17 @@
     transition: .3s;
 }
 
-.img-form-btn{
+.imgFormBtn{
     align-items: center;
     display: flex;
     gap: 30px;
     justify-content: center;
 }
-.img-form-btn button:first-of-type{
+.imgFormBtn button:first-of-type{
     background-color: #ff1300;
 }
 
-.img-form-btn button{
+.imgFormBtn button{
     background-color: #07f;
     border: none;
     border-radius: 7px;
@@ -60,7 +60,7 @@
     padding-block: 7px;
     width: 100px;
 }
-.img-list-top{
+.imgListTop{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,11 +69,22 @@
     margin-right: 50px;
 }
 
-.add-img-btn button{
+.addImgBtn button{
     background-color: rgba(0,119,255,.1);
     border: 2px solid #07f;
     border-radius: 5px;
     color: #07f;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.cancelImgBtn button{
+    background-color:rgba(246, 198, 195, 0.1);
+    border: 2px solid #ff1300;
+    border-radius: 5px;
+    color: #ff1300;
     cursor: pointer;
     font-weight: 700;
     outline: none;
@@ -96,7 +107,7 @@
     width: 30px;
 }
 
-.img-list-container{
+.imgListContainer{
     grid-gap: 20px;
     display: grid;
     gap: 10px;

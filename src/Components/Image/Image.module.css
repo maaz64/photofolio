@@ -1,4 +1,4 @@
-.img-comp{
+.imgComp{
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
@@ -15,7 +15,7 @@
     height:85%;
     background-size: contain;
 }
-.img-comp span{
+.imgComp span{
     font-size: 1.1rem;
     justify-self: baseline;
     align-self:center ;
@@ -29,15 +29,15 @@
  height: 95%; 
 }
 
-.img-comp:hover .update-img {
+.imgComp:hover .updateImg {
     display: block;
 }
 
-.img-comp:hover .delete-img{
+.imgComp:hover .deleteImg{
     display: block;
 }
 
-.update-img, .delete-img{
+.updateImg, .deleteImg{
     border: none;
     display: none;
     outline: none;
@@ -45,22 +45,22 @@
     top: -1px;
     transition: .3s;
 }
-.update-img{
+.updateImg{
     right: 50px;
     top:1px;
 }
 
-.delete-img{
+.deleteImg{
     right:10px;
     background: none;
 }
 
 
-.update-img img, .delete-img img{
+.updateImg img, .deleteImg img{
     width:30px;
 }
 
-.update-img img:hover, .delete-img img:hover{
+.updateImg img:hover, .deleteImg img:hover{
     width:35px;
     transition: .3s;
 
